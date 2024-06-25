@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "106006463945",
+    "project_id": "fir-setup-eda4d",
+    "storage_bucket": "fir-setup-eda4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106006463945:android:60e3d930841096204ad418",
+        "android_client_info": {
+          "package_name": "com.android.firebasesetup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQH3F-koPPHMk-cx2g9Yq3pTBwDJ_37jA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
