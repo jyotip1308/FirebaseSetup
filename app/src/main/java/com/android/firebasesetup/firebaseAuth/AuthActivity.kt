@@ -10,6 +10,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import com.android.firebasesetup.firebaseAuth.ui.AuthScreen
+import com.android.firebasesetup.firebaseAuth.ui.PhoneAuthScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -29,10 +30,12 @@ class AuthActivity : ComponentActivity() {
                         }
                     }
                 ){ innerPadding ->
-                    AuthScreen(
-                        contentPadding = innerPadding,
+//                    AuthScreen(
+//                        contentPadding = innerPadding,
+//
+//                    )
 
-                    )
+                    PhoneAuthScreen(activity = this, contentPadding = innerPadding)
                 }
             }
         }
