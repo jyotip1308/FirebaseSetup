@@ -1,5 +1,7 @@
 package com.android.firebasesetup.di
 
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.firestore.FirebaseFirestore
@@ -27,4 +29,8 @@ object FirebaseModule {
     @Singleton
     @Provides
     fun providesFireStoreDb(): FirebaseFirestore = Firebase.firestore
+
+    @Singleton
+    @Provides
+    fun providesFirebaseAuth():FirebaseAuth = Firebase.auth
 }

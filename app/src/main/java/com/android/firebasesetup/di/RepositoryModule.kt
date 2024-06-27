@@ -1,5 +1,7 @@
 package com.android.firebasesetup.di
 
+import com.android.firebasesetup.firebaseAuth.repository.AuthRepository
+import com.android.firebasesetup.firebaseAuth.repository.AuthRepositoryImpl
 import com.android.firebasesetup.firebaseRealtimeDb.repository.RealtimeDbRepository
 import com.android.firebasesetup.firebaseRealtimeDb.repository.RealtimeRepository
 import com.android.firebasesetup.firestoredb.repository.FireStoreDbRepositoryImpl
@@ -22,4 +24,9 @@ abstract class RepositoryModule {
     abstract fun providesFireStoreRepository(
         repo:FireStoreDbRepositoryImpl
     ) : FireStoreRepository
+
+    @Binds
+    abstract fun providesFirebaseAuthRepository(
+        repo:AuthRepositoryImpl
+    ) : AuthRepository
 }

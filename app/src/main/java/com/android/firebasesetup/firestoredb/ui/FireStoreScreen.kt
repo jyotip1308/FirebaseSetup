@@ -271,7 +271,6 @@ fun UpdateData(
     val des = remember { mutableStateOf(itemState.item?.description)}
     val scope = rememberCoroutineScope()
     val context = LocalContext.current
-
         AlertDialog(onDismissRequest = { isUpdate.value = false},
             text = {
                 Column (
